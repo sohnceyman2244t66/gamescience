@@ -1,0 +1,14 @@
+$(".video-autoplay").hover(function () {
+    if (! /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        var v = $(this).children("video");
+        v.fadeIn();
+        v[0].play();
+    }
+}, function () {
+    if (! /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        var v = $(this).children("video");
+        v.fadeOut();
+        v[0].currentTime = 0;
+        v[0].pause();
+    }
+});

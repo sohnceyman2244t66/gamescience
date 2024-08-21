@@ -1,0 +1,39 @@
+/* Add here all your css styles (customizations) */
+
+.page1-5-bg-img {
+  background-image: url(/assets/img/bg/page1_bg6.jpg);
+}
+
+@media (min-width: 768px) {
+  .page1-5-bg-img {
+    background-image: url(/assets/img/bg/page1_bg5.jpg);
+  }
+}
+
+.text-stroke-black {
+  /*-webkit-text-stroke: 2px black;*/
+  text-shadow: 0 1px #0000004f, 1px 0 #0000004f, -1px 0 #0000004f, 0 -1px #0000004f;
+}
+
+.video-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.page-height-fix {
+  min-height: 400px;
+}
+
+@media (min-width: 768px) {
+  .page-height-fix {
+    min-height: 80vh;
+  }
+}
+
